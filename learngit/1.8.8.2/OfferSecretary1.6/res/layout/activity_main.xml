@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.offersecretary16.MainActivity"
+    tools:ignore="MergeRootFrame" 
+    >
+
+    <TextView
+        android:id="@+id/zongshu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="今日宣讲会总数：" 
+        android:gravity="center"
+        android:layout_weight="1"/>
+    
+    <Button
+        android:id="@+id/xuanjianghui"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="宣 讲 会" 
+        android:layout_weight="10"
+        />
+    
+            <Button
+            android:id="@+id/gongsi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="公司" 
+            android:layout_weight="5"/>
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+        
+        <Button
+            android:id="@+id/shixi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="实习"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/mianjing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="面经" 
+            android:layout_weight="1"/>
+        
+	</LinearLayout>
+	
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+            android:id="@+id/luxian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="路线" 
+            android:layout_weight="1"/>
+        
+        <Button
+            android:id="@+id/douzaisou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="大家都在搜" 
+            android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    	<Button
+            android:id="@+id/yijian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="意见" 
+            android:layout_weight="1"/>
+        
+        <Button
+            android:id="@+id/bangzhu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="帮助" 
+            android:layout_weight="1"/>
+        
+	</LinearLayout>
+</LinearLayout>
+

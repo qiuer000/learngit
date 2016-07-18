@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回主页" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="城市" />
+
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="30dp"
+            android:layout_weight="6"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_uni"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="学校" />
+
+        <Spinner
+            android:id="@+id/spinner_uni"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="30dp"
+            android:layout_weight="6"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="日期" />
+        
+		<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="30dp"
+        android:layout_weight="6" >
+        
+        <Spinner
+            android:id="@+id/spinner_date_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/nian"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="年" />
+        
+        <Spinner
+            android:id="@+id/spinner_date_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/yue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="月" />
+        
+        <Spinner
+            android:id="@+id/spinner_date_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/ri"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="日" />
+		</LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="时间" />
+
+        <Spinner
+            android:id="@+id/spinner_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="30dp"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical" 
+        android:text="\n选项说明:\n
+        1.[城市]和[学校]选项至少选择一个，[日期]和[时间]选项均可为空；\n
+        2.[城市]对应的区域默认为该城市所在省份（或直辖市、自治区）区域，如选择成都，则代表四川省范围；\n
+        3.[学校]的所在城市默认为学校所在身份省会城市，如选择西南科技大学，则返回学校的城市显示为“成都”；\n
+        4.[日期]选项合法选择方式有为：完整选择年月日或年月日均为空，后者将返回对应城市或学校的近几日的宣讲会结果；\n
+        5.[时间]选项对应的是所选时间及其以后的宣讲会信息；\n\n
+        Offer小蜜在不断完善功能和数据，敬请理解和关注……\n
+        " />
+
+    <Button
+        android:id="@+id/seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查询宣讲会" />
+
+</LinearLayout>

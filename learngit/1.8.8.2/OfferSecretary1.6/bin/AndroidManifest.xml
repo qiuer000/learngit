@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.offersecretary16"
+    android:versionCode="1"
+    android:versionName="1.8.8.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.offersecretary16.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.offersecretary16.XjhActivity"
+            android:label="宣讲会"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.CxXjhActivity"
+            android:label="宣讲会信息"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.LxActivity"
+            android:label="路线"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.SxActivity"
+            android:label="实习"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.CxSxActivity"
+            android:label="实习信息"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.MjActivity"
+            android:label="面经"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.CxMjActivity"
+            android:label="面经信息"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.GsActivity"
+            android:label="公司"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.CxGsActivity"
+            android:label="公司信息"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.DzsActivity"
+            android:label="大家都在搜"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.BzActivity"
+            android:label="帮助"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+        <activity
+            android:name="com.offersecretary16.YjActivity"
+            android:label="意见"
+            android:screenOrientation="portrait" > <!-- portrait设置屏幕为直立的，不允许水平 -->
+        </activity>
+    </application>
+
+</manifest>

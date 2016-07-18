@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回   面经" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:focusable="true"  
+		android:focusableInTouchMode="true"
+        >
+
+        <Button
+            android:id="@+id/previouspage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="上一页"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/nextpage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="下一页"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tiaozhuandaodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳转到第"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/inputPage"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/ye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/jump"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="跳转"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/yindao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/print_mj"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autoLink="web"
+        android:hint="正在查询……"
+        android:scrollbars="vertical" /> 
+
+</LinearLayout>

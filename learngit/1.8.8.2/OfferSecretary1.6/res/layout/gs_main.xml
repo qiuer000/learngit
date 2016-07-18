@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回主页" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:focusable="true"  
+		android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/textView_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="公          司"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_gs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="请在此输入公司名称……"
+            android:textSize="12sp" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/flush_gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:focusable="true"  
+		android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/textView_uni_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="学校/城市"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_uni_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="请在此输入学校或城市……"
+            android:textSize="12sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/flush_uni_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" 
+        android:text="\n查询说明:\n
+        1.[公司]为必填项，如：电信，移动；\n
+        2.[学校/城市]为选填项，可以不填写，如需填写，只能填写一个学校名或者一个城市名；如：电子科技大学，或者成都；\n\n
+        Offer小蜜在不断完善功能和数据，敬请理解和关注……\n
+        "
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查询公司" />
+
+</LinearLayout>

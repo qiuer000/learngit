@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回主页" />
+
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:focusable="true"  
+		android:focusableInTouchMode="true">
+        <EditText 
+            android:id="@+id/input_yj"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:hint="请在此输入您的宝贵意见和建议……">
+        </EditText>
+
+        <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交" 
+        android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/yj_print"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="您的建议和意见会使Offer小蜜更完美！"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

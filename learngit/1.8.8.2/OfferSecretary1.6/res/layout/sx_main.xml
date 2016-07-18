@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回主页" />
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" 
+        android:focusable="true"  
+		android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/textView_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="公司"
+            android:textSize="16sp" />
+
+       <EditText
+            android:id="@+id/input_gs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:hint="请在此输入公司名称……"
+            android:textSize="12sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/flush_gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+       <TextView
+            android:id="@+id/textView_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="城市" />
+
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="10dp"
+            android:layout_weight="6"/>
+
+    </LinearLayout>
+    
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="起始\n日期" />
+        
+		<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_weight="6" >
+        
+        <Spinner
+            android:id="@+id/spinner_date_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/nian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年" />
+        
+        <Spinner
+            android:id="@+id/spinner_date_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月" />
+        
+        <Spinner
+            android:id="@+id/spinner_date_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/ri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="日" />
+        
+		</LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_date_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="截止\n日期" />
+        
+		<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_weight="6" >
+        
+        <Spinner
+            android:id="@+id/spinner_date_year_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/nian_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年" />
+        
+        <Spinner
+            android:id="@+id/spinner_date_month_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/yue_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月" />
+        
+        <Spinner
+            android:id="@+id/spinner_date_day_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/ri_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="日" />
+		</LinearLayout>
+        
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/shuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" 
+        android:text="\n实习信息查询说明:\n
+        [1].[城市]和[公司]至少选填一个；\n
+        [2].[起始日期]与[截止日期]为选填项(注意：格式必须完整），如果都为空，默认返回所有实习信息；\n
+        如果只填起始日期，则返回从起始日期到今日的实习信息；\n
+        如果只填截止日期，则返回截止日期之前的所有信息；\n
+        如果二者都填写，则返回日期区间内的信息。\n\n
+        Offer小蜜在不断完善功能和数据，敬请理解和关注……\n "
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查询实习" />
+
+</LinearLayout>
